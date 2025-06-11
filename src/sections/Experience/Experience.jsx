@@ -29,7 +29,7 @@ export default function Experience() {
   };
 
   return (
-    <section id="experience" className={styles.container}>
+    <section id="experience" className={styles.experienceContainer}>
       <h2 className=' sectionTitle'>Experiencia Laboral</h2>
 
       <div className={styles.timeline}>
