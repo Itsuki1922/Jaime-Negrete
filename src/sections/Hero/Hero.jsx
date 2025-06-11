@@ -23,24 +23,29 @@ function Hero(){
     <section id="hero" className={styles.container}>
         <div className={styles.colorModeContainer}>
             <img className={styles.hero} src={heroImg} alt="Imagen Perfil"/>
-            <img className={styles.colorMode} src={themeIcon} alt="color mode" onClick={toggleTheme}/>
+            <img className={styles.colorMode} src={themeIcon} alt="color mode" onClick={toggleTheme}/>  
         </div>
-        <div className={styles.info}>
-            <h1>Jaime <br /> Negrete</h1>
+        <div className={styles.name}>
+            <h1>Jaime Negrete</h1>
             <h2>Frontend Developer</h2>
-            <span>
-                <a href="https://linkedin.com/in/jaimenegreteferrerdesarrollador" target='_blank'>
-                    <img src={LinkedinIcon} alt="Icono Linkedin" />
-                </a>
-                <a href="https://github.com" target='_blank'>
-                    <img src={GithubIcon} alt="Icono Github" />
-                </a>
-            </span>
-            <p className={styles.description}>Desarrollador web junior , aqui podreis ver mis proyectos y experiencia</p>
-            <a href={CV} download>
-                <button type="button">Curriculum Vitae</button>
-            </a>
         </div>
+        <div className={styles.description}>
+            <p>Desarrollador web junior , aqui podreis ver mis proyectos y experiencia</p>
+            <div className={styles.button}>
+                <span>
+                    <a href="https://linkedin.com/in/jaimenegreteferrerdesarrollador" target='_blank'>
+                        <img src={LinkedinIcon} alt="Icono Linkedin" />
+                    </a>
+                    <a href="https://github.com" target='_blank'>
+                        <img src={GithubIcon} alt="Icono Github" />
+                    </a>
+                </span>
+                <a href={CV} download>
+                    <button type="button">Curriculum</button>
+                </a>
+            </div>
+        </div>
+        
     </section>
     );
 }

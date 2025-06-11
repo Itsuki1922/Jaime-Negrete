@@ -1,11 +1,17 @@
 :root{
-    --background-color: #fff;
+    --background-color: #ffffff;
     --btn-color: #0987f2;
     --btn-text-color: #fff;
     --project-card-bg: #ffffff00;
     --text-color: #222;
+    --h2-color: #222;
     --form-text-color: #555;
     --foter-text-color: #888;
+    --accent: #5b3d25;
+    --bg-dark: #ff8d2f;
+    --text-light: #000000;
+    --text-muted: #000000;
+    --badge-bg: #bf5601;
 }
 
 [data-theme = 'dark'] {
@@ -14,8 +20,14 @@
     --btn-text-color: #222;
     --project-card-bg: #fff;
     --text-color: #fff;
+    --h2-color: #ff8d2f;
     --form-text-color: #fff;
-    --foter-text-color: #bbb;    
+    --foter-text-color: #bbb;
+    --accent: #5E21F1;
+    --bg-dark: #1E1E2A;
+    --text-light: #E5E7EB;
+    --text-muted: #A1A1AA;
+    --badge-bg: #4338CA;    
 }
 
 body {
@@ -45,15 +57,15 @@ h1,h2 {
 }
 
 h2,h3 {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 h1{
     font-family: 'Rubik' , sans-serif;
-    font-size: 32px;
+    font-size: 48px;
 }
 p{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
 }
 .sectionTitle{
