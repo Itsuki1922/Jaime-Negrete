@@ -1,11 +1,12 @@
 .experienceContainer {
-  position: relative;
   max-width: 800px;
   margin: 0 auto;
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
   gap: 32px;
+  width: 100%;             
+  box-sizing: border-box; 
 }
 
 .timeline {
@@ -16,12 +17,15 @@
 }
 
 .item {
-  position: relative;
   width: 100%;
   box-sizing: border-box;
   border-radius: 8px;
-  overflow: visible;      
+  overflow: hidden;   
   transition: background 0.3s;
+}
+
+.item.open {
+  background-color: rgba(94, 33, 241, 0.1);
 }
 
 .header {
@@ -32,14 +36,17 @@
   background-color: var(--accent);
   cursor: pointer;
 }
+
 .header h3,
 .header .period {
   margin: 0;
   color: #fff;
 }
+
 .header h3 {
   font-size: 22px;
 }
+
 .header .period {
   font-size: 0.875rem;
   margin: 0 16px;
@@ -54,20 +61,15 @@
   padding: 0;
 }
 
+/* Ahora está en flujo normal: empuja hacia abajo */
 .content {
-  position: absolute;
-  top: 100%;        
-  left: 0;
-  width: 100%;
-  box-sizing: border-box;
+  display: none;
   background-color: var(--bg-dark);
   padding: 16px 24px;
   color: var(--text-light);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  z-index: 10;
-  display: none;       
 }
 
+/* Cuando la tarjeta tiene .open, mostramos ese contenido */
 .item.open .content {
   display: block;
 }
@@ -77,10 +79,12 @@
   color: var(--text-muted);
   margin-bottom: 8px;
 }
+
 .desc {
   margin: 0 0 16px;
   line-height: 1.5;
 }
+
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -89,6 +93,7 @@
   padding: 0;
   margin: 0;
 }
+
 .skill {
   background-color: var(--badge-bg);
   color: #fff;

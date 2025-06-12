@@ -19,12 +19,10 @@ function Hero() {
   const GithubIcon = theme === 'light' ? githubLigth : githubDark;
   const LinkedinIcon = theme === 'light' ? linkedinLigth : linkedinDark;
 
-  // referencias para GSAP
   const arrowRef = useRef(null);
   const ringRef = useRef(null);
 
   useEffect(() => {
-    // Flecha que rebota
     gsap.to(arrowRef.current, {
       y: 12,
       repeat: -1,
@@ -32,7 +30,6 @@ function Hero() {
       ease: Power1.easeInOut,
       duration: 0.8,
     });
-    // Anillo pulsante
     gsap.to(ringRef.current, {
       scale: 1.4,
       opacity: 0,
