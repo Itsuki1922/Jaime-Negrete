@@ -61,7 +61,6 @@
   padding: 0;
 }
 
-/* Ahora está en flujo normal: empuja hacia abajo */
 .content {
   display: none;
   background-color: var(--bg-dark);
@@ -69,7 +68,6 @@
   color: var(--text-light);
 }
 
-/* Cuando la tarjeta tiene .open, mostramos ese contenido */
 .item.open .content {
   display: block;
 }

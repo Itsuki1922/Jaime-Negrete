@@ -30,7 +30,7 @@ export default function Experience() {
 
   return (
     <section id="experience" className={styles.experienceContainer}>
-      <h2 className=' sectionTitle'>Experiencia Laboral</h2>
+      <h2 className='sectionTitle'>Experiencia Laboral</h2>
 
       <div className={styles.timeline}>
         {experiences.map(exp => {

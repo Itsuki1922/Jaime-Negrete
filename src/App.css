@@ -1,5 +1,6 @@
 :root{
     --background-color: #ffffff;
+    --background-color-bento: #eeecec;
     --btn-color: #0987f2;
     --btn-text-color: #fff;
     --project-card-bg: #ffffff00;
@@ -16,6 +17,7 @@
 
 [data-theme = 'dark'] {
     --background-color: #222;
+    --background-color-bento: #252525;
     --btn-color: #fff;
     --btn-text-color: #222;
     --project-card-bg: #fff;
